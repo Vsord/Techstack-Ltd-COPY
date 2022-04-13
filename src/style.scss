@@ -1,0 +1,401 @@
+body {
+  font-family: 'Gadugi';
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+
+
+
+  //p {
+  //  color: #718096;
+  //}
+  //
+  //a {
+  //  color: #2D3748;
+  //}
+}
+
+.header {
+  width: 100%;
+  height: 60px;
+  margin: 0 auto;
+  padding: 0;
+
+  .header-container {
+    width: 1020px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+
+    .title-input-container {
+      width: 57%;
+      height: 66px;
+      display: flex;
+      justify-content: inherit;
+      align-items: center;
+    }
+
+    .header-search-button {
+      height: 32px;
+      background-image: url("https://files.softicons.com/download/toolbar-icons/mono-general-icons-2-by-custom-icon-design/png/512x512/search.png");
+      background-repeat: no-repeat;
+      background-size: 30px;
+      width: 32px;
+      border: none;
+      float: left;
+      border-radius: 4px;
+    }
+
+    .main-dropdown-block {
+      width: 300px;
+      position: relative;
+
+      .dropdown-list {
+        display: none;
+      }
+
+      .change {
+        display: block;
+        float: left;
+
+        .categories-list:hover .first-line-dropdown-block {
+          display: block;
+        }
+
+        .categories-list {
+          display: inline-block;
+          position: relative;
+
+          a:hover {
+            color: #2F80ED;
+          }
+
+
+          .first-line-dropdown-block {
+            display: none;
+            position: absolute;
+            width: 220px;
+            height: 113px;
+            margin: 0 auto;
+            box-shadow: 0px 0px 4px #BDBDBD;
+            border-radius: 5px;
+            left: -37px;
+            margin-top: 0px;
+            z-index: 10000000;
+            background-color: white;
+
+            .container {
+              margin: 0 auto;
+              height: 100%;
+              width: 167px;
+              padding-top: 8px;
+
+              a {
+                display: inline-block;
+                color: black;
+                text-decoration: none;
+                width: 73px;
+                text-align: center;
+                padding: 2px;
+              }
+
+              a:hover {
+                color: #2F80ED;
+              }
+            }
+          }
+        }
+
+        .trending-news-list {
+          display: inline-block;
+        }
+
+        a {
+          text-decoration: none;
+          color: black;
+          padding-left: 40px;
+          font-size: 14px;
+        }
+      }
+    }
+
+    .header-title {
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 700;
+
+      a {
+        text-decoration: none;
+        color: black;
+      }
+    }
+
+    .burger-line-container {
+      cursor: pointer;
+      height: 38px;
+      float: right;
+
+      .burger-line1,
+      .burger-line2,
+      .burger-line3 {
+        background-color: black;
+        width: 30px;
+        margin: 6px 0px;
+        height: 4px;
+        transition: 0.4s;
+      }
+
+    }
+
+    .header-input {
+      position: relative;
+      background-color: #F2F2F2;
+      border: none;
+      width: 350px;
+      height: 32px;
+      border-radius: 4px;
+      outline: none;
+    }
+  }
+}
+
+.main-content {
+  margin-top: 29px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-row-gap: 30px;
+  grid-column-gap: 61px;
+  justify-content: center;
+
+  .content-block-big {
+    grid-column: 1/4;
+    border: 1px solid #E2E2E2;
+    box-sizing: border-box;
+    box-shadow: 0px 5px 4px rgba(221, 221, 221, 0.25);
+    border-radius: 5px;
+    width: 1020px;
+    height: 243px;
+
+    .text-container {
+      margin: 0 539.19px 0 55.19px;
+
+      .main-content-title {
+        font-size: 30px;
+
+        a {
+          text-decoration: none;
+          color: #2D3748;;
+        }
+      }
+
+      .text-container-text {
+        font-size: 14px;
+        color: #718096
+      }
+
+      .main-content-data {
+        display: inline-block;
+        font-size: 12px;
+        width: 100%;
+        color: #718096;
+
+        span {
+          display: inline-block;
+          color: #2D3748;
+          font-weight: 700;
+          float: right;
+        }
+      }
+    }
+
+    img {
+      max-width: 457.46px;
+      max-height: 243px;
+      float: right;
+    }
+  }
+
+  .content-block {
+    width: 300px;
+    height: 382px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(192, 189, 189, 0.25);
+    border-radius: 5px;
+
+    .text-container {
+      margin: 0 25px 0 17px;
+
+      .text-container-title {
+        font-size: 20px;
+
+        a {
+          color: #2D3748;
+          text-decoration: none;
+        }
+      }
+
+      .text-container-data {
+        display: inline-block;
+        font-size: 12px;
+        margin: 0;
+        width: 100%;
+        color: #718096;
+
+        span {
+          display: inline-block;
+          color: #2D3748;
+          font-weight: 700;
+          float: right;
+        }
+      }
+
+      .text-container-text {
+        font-size: 14px;
+        color: #718096;
+      }
+
+    }
+  }
+}
+
+.footer {
+  margin-top: 157px;
+
+  .footer-container {
+    p {
+      margin-left: 248px;
+    }
+
+    span {
+      font-weight: 700;
+      style: normal;
+    }
+  }
+}
+
+.Scroll-to-top-button {
+
+  button {
+    display: none;
+    width: 141px;
+    height: 37px;
+    background-color: #2F80ED;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    border: none;
+    z-index: 99999999;
+    position: fixed;
+    bottom: 119px;
+    left: 1045px;
+    cursor: pointer;
+  }
+}
+
+.preloader-container {
+  width: 100%;
+  height: 100%;
+  z-index: 999999999;
+  background-color: white;
+  position: absolute;
+
+  .preloader {
+    border: 12px solid #f3f3f3;
+    border-top: 12px solid #3498db;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    margin: 0 auto;
+    margin-top: 280px;
+    animation: spin 2s linear infinite;
+  }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+///////////////////////////////////////////////////////////////////////
+// Burger-menu class change
+
+.changed {
+
+  .burger-line1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+  }
+}
+
+.changed {
+
+  .burger-line2 {
+    opacity: 0;
+  }
+}
+
+.changed {
+
+  .burger-line3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-7px, -6px);
+  }
+}
+
+////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
