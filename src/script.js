@@ -5,9 +5,7 @@ const scrollToTopBtn = document.getElementById('scroll-to-top');
 const preloader = document.querySelector('.preloader-container');
 
 // XML data request
-const requstUrl = "\n" +
-    "\n" +
-    "https://newsapi.org/v2/everything?q=apple&from=2022-04-12&to=2022-04-12&sortBy=popularity&apiKey=API_KEY";
+const requstUrl = "https://jsonplaceholder.typicode.com/posts";
 
 function sendRequest(method, url, body = null) {
     return new Promise((resolve, reject) => {
@@ -44,6 +42,7 @@ function sendRequest(method, url, body = null) {
 
 
 // preloader + data request
+
 function preloaderData() {
     setTimeout(() => {
         sendRequest('GET', requstUrl)
@@ -87,4 +86,15 @@ function changeInput() {
         }
     })
 };
+
+
+
+
+
+// function changeToTopButton() {
+//     if (window.screen.width < 301) {
+//       scrollToTopBtn.innerText = 'fff'
+//     }
+// };
+// changeToTopButton();
 
