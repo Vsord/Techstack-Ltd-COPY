@@ -13,15 +13,28 @@
 <div class="preloader-container">
     <div class="preloader"></div>
 </div>
-<div class="header">
+<div class="header" id="header-scroll-to">
     <div class="header-container">
         <div class="title-input-container">
             <h3 class="header-title"><a href="">News App</a></h3>
             <div class="header-input-search">
-                <form action="">
+                <form class="header-input-form" action="">
                     <button class="header-search-button"></button>
                     <input class="header-input" type="search"
-                           placeholder="Type something to start search" onkeydown="changeInput()">
+                           placeholder="Type something to start search"
+                           onkeydown="changeInput()">
+                    <div class="header-input-search-area active"
+                         id="search-area">
+                        <ul>
+                            <li><a href="#">Sport</a></li>
+                            <li><a href="#">World</a></li>
+                            <li><a href="#">Covid</a></li>
+                            <li><a href="#">Business</a></li>
+                            <li><a href="#">Politics</a></li>
+                            <li><a href="#">Science</a></li>
+                            <li><a href="#">Religion</a></li>
+                        </ul>
+                    </div>
                 </form>
             </div>
         </div>
@@ -143,6 +156,7 @@
         <p><span>News App</span> 2021 copyright all rights reserved</p>
     </div>
 </div>
+
 <script src="script.js"></script>
 </body>
 </html>

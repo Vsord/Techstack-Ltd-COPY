@@ -1,5 +1,5 @@
 body {
-  font-family: "Gadugi";
+  font-family: "Inter", sans-serif;
   padding: 0;
   margin: 0;
   overflow: hidden;
@@ -36,7 +36,7 @@ body {
   }
 }
 .header .header-container .title-input-container {
-  width: 57%;
+  width: 51%;
   height: 66px;
   display: flex;
   justify-content: inherit;
@@ -55,6 +55,30 @@ body {
 .header .header-container .title-input-container .header-input-search {
   background-color: #F2F2F2;
   border-radius: 4px;
+}
+.header .header-container .title-input-container .header-input-search .header-input-form .header-input-search-area {
+  display: none;
+  width: 380px;
+  border: 1px solid #E2E2E2;
+  position: absolute;
+  box-shadow: 0px 5px 4px rgba(221, 221, 221, 0.25);
+  z-index: 1000000;
+  background-color: white;
+}
+.header .header-container .title-input-container .header-input-search .header-input-form .header-input-search-area ul {
+  padding: 0 10px 0px 10px;
+}
+.header .header-container .title-input-container .header-input-search .header-input-form .header-input-search-area ul li {
+  list-style-image: url("images/search-icon2.png");
+  margin-bottom: 5px;
+}
+.header .header-container .title-input-container .header-input-search .header-input-form .header-input-search-area ul li a {
+  display: inline-block;
+  width: 360px;
+  text-decoration: none;
+}
+.header .header-container .title-input-container .header-input-search .header-input-form .header-input-search-area ul li:hover {
+  background-color: #3498db;
 }
 @media (max-width: 1024px) {
   .header .header-container .title-input-container .header-input-search {
@@ -119,7 +143,7 @@ body {
   margin: 0 auto;
   height: 100%;
   width: 167px;
-  padding-top: 8px;
+  padding-top: 13px;
 }
 .header .header-container .main-dropdown-block .change .categories-list .first-line-dropdown-block .container a {
   display: inline-block;
